@@ -28,7 +28,8 @@ public class stack {
     public static int push(int arr[], int top) {
         if (top == 4) {
             System.out.println("cannot push");
-        } else {
+        }
+        else {
             Scanner sc = new Scanner(System.in);
             System.out.println("enter elements: ");
             for (int i = top + 1; i < 5; i++) {

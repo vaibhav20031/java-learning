@@ -1,15 +1,24 @@
 // super()
 // final() 
 public class speciaterms{
-    int a =10;
-    String name ="vaibhav";
-    public speciaterms(int data){
-        a=data;
-        System.out.println("jai shree krishna ");
-        System.out.println(a);
+    int a;
+    String name;
+     speciaterms(){
+        a=10;
+        name ="vaibhav";
+    }
+     speciaterms(speciaterms obj){
+        a=obj.a;
+        name=obj.name ;
+    }
+     void show(){
+        System.out.println(name+" "+a);
     }
     public static void main(String[] args){
-        speciaterms obj=new speciaterms(100);
-        // System.out.println(obj.name);
+        speciaterms obj=new speciaterms();
+        obj.show();
+        speciaterms obj2=new speciaterms(obj);
+        obj2.show();
     }
+    
 }
