@@ -1,5 +1,4 @@
-import java.io.IOException;
-import java.lang.*;
+
 public class multithred extends Thread{
     @Override
     public void run(){
